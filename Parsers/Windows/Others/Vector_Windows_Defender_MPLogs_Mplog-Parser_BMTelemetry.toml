@@ -19,7 +19,7 @@ timezone = "Etc/UTC"
 
 [sources.MPLog_Mplog-Parser_BMTelemetry_csv_input]
   type = "file"
-  include = ["${INPUT_FOLDER:?The input folder containing the Windows Defender MPLog files is required.}/**/*MPLog_BMTelemetry*.csv"]
+  include = ["${INPUT_FOLDER:?The input folder containing the Windows Defender MPLog files is required.}/*/Antivirus/*MPLog_BMTelemetry*.csv"]
   ignore_checkpoints = true
   read_from = "beginning"
   oldest_first = false
