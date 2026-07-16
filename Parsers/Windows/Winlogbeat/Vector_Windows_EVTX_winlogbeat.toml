@@ -20,7 +20,7 @@ timezone = "Etc/UTC"
 
 [sources.Windows_EVTX_winlogbeat_input]
   type = "file"
-  include = ["${INPUT_FOLDER:?The input folder containing the Winlogbeat JSON output files is required.}/**/*winlogbeat*.ndjson"]
+  include = ["${INPUT_FOLDER:?The input folder containing the Winlogbeat JSON output files is required.}/*/EventLogs/*winlogbeat*.ndjson"]
   ignore_checkpoints = true
   read_from = "beginning"
   oldest_first = false

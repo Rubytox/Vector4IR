@@ -21,12 +21,14 @@ timezone = "Etc/UTC"
 [sources.SBECmd_Shellbags_csv_input]
   type = "file"
   include = [
-    "${INPUT_FOLDER:?The input folder containing the SBECmd Shellbags NTUSER (uppercase) files is required.}/**/FileFolderAccess/*NTUSER.DAT.csv",
-    "${INPUT_FOLDER:?The input folder containing the SBECmd Shellbags ntuser (lowercase) files is required.}/**/FileFolderAccess/*ntuser.dat.csv",
-    "${INPUT_FOLDER:?The input folder containing the SBECmd Shellbags NTUSER (uppercase) files is required.}/**/FileFolderAccess/*NTUSER.DAT.csv",
-    "${INPUT_FOLDER:?The input folder containing the SBECmd Shellbags ntuser (lowercase) files is required.}/**/FileFolderAccess/*ntuser.dat.csv",
-    "${INPUT_FOLDER:?The input folder containing the SBECmd Shellbags UsrClass files is required.}/**/FileFolderAccess/*UsrClass.dat.csv",
-    "${INPUT_FOLDER:?The input folder containing the SBECmd Shellbags UsrClass files is required.}/**/FileFolderAccess/*UsrClass.csv"
+    "${INPUT_FOLDER:?The input folder containing the SBECmd Shellbags NTUSER (uppercase) files is required.}/*/FileFolderAccess/*NTUSER.DAT.csv",
+    "${INPUT_FOLDER:?The input folder containing the SBECmd Shellbags ntuser (lowercase) files is required.}/*/FileFolderAccess/*ntuser.dat.csv",
+    "${INPUT_FOLDER:?The input folder containing the SBECmd Shellbags NTUSER (uppercase) files is required.}/*/FileFolderAccess/*NTUSER.DAT.csv",
+    "${INPUT_FOLDER:?The input folder containing the SBECmd Shellbags ntuser (lowercase) files is required.}/*/FileFolderAccess/*ntuser.dat.csv",
+    "${INPUT_FOLDER:?The input folder containing the SBECmd Shellbags ntuser (lowercase) files is required.}/*/FileFolderAccess/*ntuser.csv",
+    "${INPUT_FOLDER:?The input folder containing the SBECmd Shellbags NTUSER (uppercase) files is required.}/*/FileFolderAccess/*NTUSER.csv",
+    "${INPUT_FOLDER:?The input folder containing the SBECmd Shellbags UsrClass files is required.}/*/FileFolderAccess/*UsrClass.dat.csv",
+    "${INPUT_FOLDER:?The input folder containing the SBECmd Shellbags UsrClass files is required.}/*/FileFolderAccess/*UsrClass.csv"
   ]
   ignore_checkpoints = true
   read_from = "beginning"

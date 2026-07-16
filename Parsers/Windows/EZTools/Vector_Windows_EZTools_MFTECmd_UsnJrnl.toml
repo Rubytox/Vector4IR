@@ -18,7 +18,7 @@ timezone = "Etc/UTC"
 
 [sources.MFTECmd_UsnJrnl_csv_input]
   type = "file"
-  include = ["${INPUT_FOLDER:?The input folder containing the MFTECmd UsnJrnl files is required.}/**/*J_Output.csv"]
+  include = ["${INPUT_FOLDER:?The input folder containing the MFTECmd UsnJrnl files is required.}/*/FileSystem/*J_Output.csv"]
   ignore_checkpoints = true
   read_from = "beginning"
   oldest_first = false

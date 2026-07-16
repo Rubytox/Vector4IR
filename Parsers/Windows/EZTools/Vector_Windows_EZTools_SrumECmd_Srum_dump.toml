@@ -20,7 +20,7 @@ timezone = "Etc/UTC"
 
 [sources.SrumECmd_Srum_dump_csv_input]
   type = "file"
-  include = ["${INPUT_FOLDER:?The input folder containing the SrumECmd Srum Dump files is required.}/**/*SrumECmd*.csv"]
+  include = ["${INPUT_FOLDER:?The input folder containing the SrumECmd Srum Dump files is required.}/*/SRUM/*SrumECmd*.csv"]
   ignore_checkpoints = true
   read_from = "beginning"
   oldest_first = false

@@ -20,7 +20,7 @@ timezone = "Etc/UTC"
 
 [sources.JLECmd_Jumplist-CustomDst_csv_input]
   type = "file"
-  include = ["${INPUT_FOLDER:?The input folder containing the JLECmd Jumplist Custom Destinations files is required.}/**/*CustomDestinations.csv"]
+  include = ["${INPUT_FOLDER:?The input folder containing the JLECmd Jumplist Custom Destinations files is required.}/*/FileFolderAccess/*CustomDestinations.csv"]
   ignore_checkpoints = true
   read_from = "beginning"
   oldest_first = false

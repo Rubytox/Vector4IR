@@ -19,7 +19,7 @@ timezone = "Etc/UTC"
 
 [sources.SumECmd_UAL_Clients_csv_input]
   type = "file"
-  include = ["${INPUT_FOLDER:?The input folder containing the UAL Client file(s) is required.}/**/*SumECmd*Clients_Output*.csv"]
+  include = ["${INPUT_FOLDER:?The input folder containing the UAL Client file(s) is required.}/*/SUM/**/*SumECmd*Clients_Output*.csv"]
   ignore_checkpoints = true
   read_from = "beginning"
   oldest_first = false

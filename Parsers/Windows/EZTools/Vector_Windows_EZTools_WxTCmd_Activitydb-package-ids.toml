@@ -20,7 +20,7 @@ timezone = "Etc/UTC"
 
 [sources.WxTCmd_Activitydb-package-ids_csv_input]
   type = "file"
-  include = ["${INPUT_FOLDER:?The input folder containing the WxTCmd Activitydb Package IDs files is required.}/**/*_Activity_PackageIDs.csv"]
+  include = ["${INPUT_FOLDER:?The input folder containing the WxTCmd Activitydb Package IDs files is required.}/*/FileFolderAccess/*_Activity_PackageIDs.csv"]
   ignore_checkpoints = true
   read_from = "beginning"
   oldest_first = false
